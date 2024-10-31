@@ -1,0 +1,5 @@
+Compiling C:\Users\vepro\OneDrive\Documentos\Residencia\Simulacion\Codigo\main on 31-Oct-24 at 08:31
+>>> Warning 202 "C:\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c" Line 174(13,17): Variable never used:   data
+      Memory usage:   ROM=9%      RAM=5% - 9%
+      0 Errors,  1 Warnings.
+Build Successful.

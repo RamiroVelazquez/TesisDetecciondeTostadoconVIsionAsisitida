@@ -1,0 +1,113 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     LCD_ADDR
+022     lcd_total_rows
+023     lcd_total_columns
+024     new_row_request
+025     BACKLIGHT_LED
+026     lcd_gotoxy.data
+027-028 @sprintf_string
+029     MAIN.duty
+02A     MAIN.i
+02B     lcd_init.addr
+02B     MAIN.@SCRATCH1
+02B     @PSTRINGC7_737.@SCRATCH1
+02C     lcd_init.col
+02C     @PSTRINGC7_737.@SCRATCH2
+02D     lcd_init.row
+02D     @PSTRINGC7_737.@SCRATCH3
+02E     lcd_init.i
+02E     LCD_PUTC.in_data
+02E     @PSTRINGC7_737.@SCRATCH4
+02F     lcd_gotoxy.x
+02F     @delay_ms1.P1
+02F     lcd_init.@SCRATCH1
+030     lcd_gotoxy.y
+031     lcd_gotoxy.row
+032     lcd_gotoxy.column
+033     lcd_gotoxy.row_addr
+034     lcd_gotoxy.lcd_address
+035     lcd_gotoxy.@SCRATCH1
+036     lcd_send_byte.data
+037     lcd_send_byte.type
+038     lcd_send_byte.@SCRATCH1
+039     i2c_send_nibble.data
+03A     i2c_send_nibble.type
+03B     i2c_send_nibble.@SCRATCH1
+03C     @I2C_WRITEU_129.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const742.call
+000013  @const747.call
+000019  @const748.call
+000020  @const750.call
+000029  @const751.call
+000032  @const752.call
+00003B  @const754.call
+000043  @delay_ms1
+000057  @I2C_WRITEU_129
+000067  i2c_send_nibble
+0000B7  lcd_send_byte
+0000D5  lcd_clear
+0000DF  lcd_init
+00012B  lcd_gotoxy
+000162  LCD_PUTC
+000187  @PSTRINGC7_737
+0001DD  MAIN
+0001DD  @cinit1
+000201  @cinit2
+
+Project Directory:
+    C:\Users\vepro\OneDrive\Documentos\Residencia\Simulacion\Codigo\
+
+Project Files:
+    main.c                                                  [31-Oct-24 08:31  CRC=F25017EE]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [07-Mar-23 19:19  CRC=32478F9C]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\i2c_Flex_LCD.c [26-Apr-20 12:13  CRC=16AFB211]
+
+Source signature=51F70BAC
+Program memory checksum=0000
+Hex file CRC=AE23
+
+Units:
+    C:\Users\vepro\OneDrive\Documentos\Residencia\Simulacion\Codigo\main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
