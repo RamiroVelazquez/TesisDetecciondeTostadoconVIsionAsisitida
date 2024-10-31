@@ -1,0 +1,1 @@
+Para descargar el esquema para PCb, visita el siguiente enlace: https://www.flux.ai/vela/liable-emerald-transporter?editor=schematic
